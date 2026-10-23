@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@keyframes flowIn {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flowOut {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-pipe-flow-in {
+  stroke-dasharray: 8 6;
+  animation: flowIn 0.8s linear infinite;
+}
+
+.animate-pipe-flow-out {
+  stroke-dasharray: 8 6;
+  animation: flowOut 0.8s linear infinite;
+}
+
+.animate-spin-pump {
+  animation: spinSlow 1.5s linear infinite;
+  transform-origin: center;
+}

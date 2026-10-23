@@ -1,0 +1,8 @@
+{
+  "name": "Remix Simulador de Monitoreo y Control de Estanque Industrial",
+  "description": "Simulador educativo interactivo de monitoreo y control automático de nivel con histéresis para Ingeniería en Automatización.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
